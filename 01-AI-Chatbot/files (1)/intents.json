@@ -1,0 +1,59 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good afternoon", "is anyone there", "hey there", "hi there", "howdy", "greetings"],
+      "responses": ["Hello! Welcome to our support center. How can I help you today?", "Hi there! What can I do for you?", "Hey! I'm here to help with your order, shipping, refunds, or account questions."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "see you later", "goodbye", "that's all", "thanks bye", "talk to you later", "exit", "quit"],
+      "responses": ["Goodbye! Feel free to reach out anytime.", "Take care! Have a great day.", "Bye! Let us know if you need anything else."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "that's helpful", "thanks a lot", "appreciate it", "awesome thanks"],
+      "responses": ["You're welcome!", "Happy to help!", "Anytime! Is there anything else I can help with?"]
+    },
+    {
+      "tag": "order_status",
+      "patterns": ["where is my order", "track my order", "order status", "has my order shipped", "when will my order arrive", "check order", "order tracking", "my package status", "where's my package", "track shipment"],
+      "responses": ["You can track your order using the tracking link sent to your email. Could you share your order ID so I can check it for you?", "I can help track that. Please provide your order number.", "Let me look into your order status — can you share your order ID?"]
+    },
+    {
+      "tag": "refund_request",
+      "patterns": ["I want a refund", "how do I get a refund", "refund my order", "cancel and refund", "return this item", "how to return a product", "money back", "refund policy", "I want my money back"],
+      "responses": ["I'm sorry to hear that. Refunds are processed within 5-7 business days after we receive the returned item. Would you like me to start the return process?", "You can request a refund from the Orders page within 30 days of delivery. Do you want me to initiate that for you?", "Let's get that sorted — can you share your order ID so I can start the refund process?"]
+    },
+    {
+      "tag": "shipping_info",
+      "patterns": ["shipping cost", "how much is shipping", "delivery time", "how long does shipping take", "do you ship internationally", "shipping charges", "estimated delivery"],
+      "responses": ["Standard shipping takes 3-5 business days and is free on orders above ₹499. Express delivery takes 1-2 days for an extra fee.", "We currently ship across India, with delivery typically taking 3-5 business days depending on your location."]
+    },
+    {
+      "tag": "payment_issue",
+      "patterns": ["payment failed", "my card was declined", "payment not going through", "double charged", "billing issue", "payment error", "charged twice", "payment failed twice", "I was charged multiple times", "card declined again", "transaction failed", "billed incorrectly"],
+      "responses": ["Sorry about that! Payment issues are usually resolved within 24 hours. Could you share the transaction ID so I can check?", "I understand how frustrating that is. Let me look into your payment — please share your transaction reference number."]
+    },
+    {
+      "tag": "account_help",
+      "patterns": ["reset my password", "can't log in", "forgot password", "update my email", "change my account details", "login issue", "account locked"],
+      "responses": ["You can reset your password from the login page using 'Forgot Password'. Would you like me to send a reset link to your registered email?", "Let's get you back in — I can send a password reset link. Can you confirm your registered email?"]
+    },
+    {
+      "tag": "complaint",
+      "patterns": ["I received a damaged item", "product is defective", "wrong item delivered", "I'm very unhappy with the service", "this is unacceptable", "poor quality product", "item not working"],
+      "responses": ["I'm really sorry about that experience. Let's fix this right away — could you share your order ID and a photo of the issue so I can escalate it?", "That's not the experience we want for you. I'll flag this for priority resolution — can you provide your order ID?"]
+    },
+    {
+      "tag": "agent_request",
+      "patterns": ["talk to a human", "connect me to an agent", "I need a real person", "speak to customer service", "human support", "escalate to agent", "can I talk to someone", "get me a support agent", "I want to speak with a person", "transfer me to an agent"],
+      "responses": ["Sure, connecting you to a human support agent now. Please hold on.", "No problem — I'll transfer this conversation to a live agent."]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["I'm not fully sure I understood that. Could you rephrase, or ask about order status, refunds, shipping, payments, or your account?", "Sorry, I didn't quite get that. I can help with orders, refunds, shipping, payments, or account issues."]
+    }
+  ]
+}
